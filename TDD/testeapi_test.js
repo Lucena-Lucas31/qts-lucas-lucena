@@ -12,3 +12,10 @@ Deno.test("Teste de assertions (API)", () => {
     assertEquals (aluno, "Cróvis José");
     assertStringIncludes (aluno, "José");
 })
+
+Deno.test("Testando array do professor (API)", () => {
+    assertArreyIncludes (professores,
+    ["Davi", "Laís", "Alan"],
+    "Opa! Algo deu errado");
+})
+
